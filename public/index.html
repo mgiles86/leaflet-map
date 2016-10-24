@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Starter Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="main.css" rel="stylesheet">
+    <!-- Load Leaflet from CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet-src.js"></script>
+    <!-- Load Esri Leaflet locally, after cloning this repository -->
+    <script src="https://unpkg.com/esri-leaflet@2.0.4"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-light" style="background: #f8f8f8; border: 1px solid #e7e7e7;">
+        <!-- Title -->
+        <div class="navbar-header pull-left hidden-xs-down col-sm-5">
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-header pull-right hidden-lg-up col-xs-10 col-sm-5">
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#map-wrapper" role="tab">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#sidebar-wrapper" role="tab">Feature</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-header hidden-lg-up col-xs-2">
+            <button type="button" data-toggle="collapse" data-target="#collapsable-menu" class="navbar-toggler hidden-lg-up" style="float:right;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-toggleable-md" id="collapsable-menu">
+            <ul class="nav navbar-nav pull-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">French</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Map and Sidebar -->
+    <div class="container">
+        <!-- Tab panes -->
+        <div class="row content-row tab-content">
+            <div class="tab-pane col-md-12 col-lg-8 active" id="map-wrapper" style="height:100%;padding-right:0;" role="tabpanel">
+                <div id="map" style="height:100%;"></div>
+            </div>
+            <div class="tab-pane col-md-12 col-lg-4 card" id="sidebar-wrapper" role="tabpanel" style="height:100%;background: #f8f8f8; border: 1px solid #e7e7e7;padding:0;">
+                <img class="card-img-top" src="./img/waterfall.jpg" alt="Card image cap" style="width:100%">
+                <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
